@@ -1,0 +1,5 @@
+@use '@angular/material'as mat;
+@use 'src/scss/custom-theme'as custom;
+
+$_ripple-opacity: 0.1;
+@include mat.button-theme(custom.$tiaa-light-theme);

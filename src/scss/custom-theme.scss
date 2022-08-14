@@ -1,0 +1,72 @@
+@use 'sass:map';
+@use '@angular/material'as mat;
+@use '@angular/material/theming'as theming;
+
+
+$custom-reds: (100: '#FECDD2',
+  200: '#FF8A80',
+  300: '#e57373',
+  400: '#ef5350',
+);
+
+$red-palette: map.merge(mat.$red-palette, $custom-reds);
+
+$custom-orange: (100: #ffe0b2,
+  200: #ffa400,
+  300: #f57c00,
+  400: #e65100,
+);
+
+$custom-blue: (100: #99D6EA,
+  200: #009FDB,
+  300: #0082E6,
+  400: #0067B9,
+);
+$blue-palette: map.merge(mat.$blue-palette, $custom-blue);
+
+$custom-indigo: (100: #A8B1EB,
+  200: #6E79F5,
+  300: #3F51B5,
+  400: #003865,
+);
+$indigo-palette: map.merge(mat.$indigo-palette, $custom-indigo);
+
+$custom-cyan: (100: #B2EBF2,
+  200: #00BCD4,
+  300: #007C91,
+  400: #006078,
+);
+
+$cyan-palette: map.merge(mat.$cyan-palette, $custom-cyan);
+
+$tiaa-dark-primary: mat.define-palette($indigo-palette, 400, 100, 300);
+$tiaa-dark-accent: mat.define-palette($blue-palette, 400, 100, 300);
+
+$tiaa-light-primary: mat.define-palette($blue-palette, 400, 100, 300);
+$tiaa-light-accent: mat.define-palette($cyan-palette, 400, 100, 300);
+
+$warn-palette: mat.define-palette($red-palette);
+
+$tiaa-light-theme: mat.define-dark-theme((color: (primary: $tiaa-dark-primary,
+      accent: $tiaa-dark-accent,
+      warn: $warn-palette,
+    ),
+  ));
+
+$tiaa-dark-theme: mat.define-light-theme((color: (primary: $tiaa-light-primary,
+      accent: $tiaa-light-accent,
+      warn: $warn-palette,
+    ),
+  ));
+
+// pre-existing vars from theming/_palette.scss
+$dark-primary-text: $indigo-palette(100);
+$dark-secondary-text: mat.$grey-palette(A100);
+$dark-disabled-text: rgba(black, 0.38); //TODO: design should confirm
+$dark-dividers: rgba(black, 0.12); //TODO: design should confirm
+$dark-focused: rgba(black, 0.12); //TODO: design should confirm
+$light-primary-text: $indigo-palette(400);
+$light-secondary-text: rgba(white, 0.7);
+$light-disabled-text: rgba(white, 0.5);
+$light-dividers: rgba(white, 0.12);
+$light-focused: rgba(white, 0.12);

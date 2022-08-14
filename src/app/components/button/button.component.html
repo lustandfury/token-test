@@ -1,0 +1,29 @@
+<button
+  *ngIf="variant === 'flat'"
+  color="{{ palette }}"
+  mat-flat-button
+  [disabled]="isDisabled"
+  (click)="onClick.emit($event)"
+>
+  {{ label }}
+</button>
+
+<button
+  *ngIf="variant === 'stroke'"
+  color="{{ palette }}"
+  mat-stroked-button
+  [disabled]="isDisabled"
+  (click)="onClick.emit($event)"
+>
+  {{ label }}
+</button>
+
+<button
+  *ngIf="variant === 'text'"
+  mat-button
+  color="{{ palette }}"
+  [disabled]="isDisabled"
+  (click)="onClick.emit($event)"
+>
+  {{ label }}
+</button>
