@@ -8,4 +8,14 @@
 
 @include mat.core-theme(custom.$tiaa-light-theme);
 
-@include mat.all-component-colors(custom.$tiaa-light-theme);
+// @include mat.all-component-colors(custom.$tiaa-light-theme);
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
