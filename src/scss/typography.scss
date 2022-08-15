@@ -1,6 +1,7 @@
 @use "@angular/material"as mat;
 
 $heading-font-family: "Roboto, 'Helvetica Neue', sans-serif";
+// The following sample defines each typography "level" as a variant
 
 $tiaa-typography: mat.define-typography-config($display-4: mat.define-typography-level(56px, $line-height: 60px, $font-family: $heading-font-family, $font-weight: 300),
   $display-3: mat.define-typography-level(48px, $line-height: 52px, $font-family: $heading-font-family),

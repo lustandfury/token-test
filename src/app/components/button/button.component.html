@@ -1,7 +1,8 @@
 <button
-  *ngIf="variant === 'flat'"
-  color="{{ palette }}"
-  mat-flat-button
+  ngClass="{{ classes }}"
+  *ngIf="variant === 'basic'"
+  color="{{ color }}"
+  mat-button
   [disabled]="isDisabled"
   (click)="onClick.emit($event)"
 >
@@ -9,8 +10,32 @@
 </button>
 
 <button
+  ngClass="{{ classes }}"
+  *ngIf="variant === 'raised'"
+  color="{{ color }}"
+  mat-raised-button
+  [disabled]="isDisabled"
+  (click)="onClick.emit($event)"
+>
+  {{ label }}
+</button>
+
+<button
+  *ngIf="variant === 'flat'"
+  ngClass="{{ classes }}"
+  color="{{ color }}"
+  mat-flat-button
+  [disabled]="isDisabled"
+  (click)="onClick.emit($event)"
+  value="{{ label }}"
+>
+  {{ label }}
+</button>
+
+<button
   *ngIf="variant === 'stroke'"
-  color="{{ palette }}"
+  ngClass="{{ classes }}"
+  color="{{ color }}"
   mat-stroked-button
   [disabled]="isDisabled"
   (click)="onClick.emit($event)"
@@ -20,10 +45,22 @@
 
 <button
   *ngIf="variant === 'text'"
+  ngClass="{{ classes }}"
   mat-button
-  color="{{ palette }}"
+  color="{{ color }}"
   [disabled]="isDisabled"
   (click)="onClick.emit($event)"
+  value="{{ label }}"
 >
   {{ label }}
+</button>
+
+<button
+  *ngIf="isIconButton"
+  ngClass="{{ classes }}"
+  mat-icon-button
+  color="{{ color }}"
+  [disabled]="isDisabled"
+>
+  <mat-icon>{{ icon }}</mat-icon>
 </button>

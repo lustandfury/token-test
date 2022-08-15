@@ -34,9 +34,30 @@
     <h5>h5 header</h5>
     <h6>h6 header</h6>
     <div>
-      <tiaa-button mat-raised-button color="primary">Raised</tiaa-button>
-      <tiaa-button mat-flat-button color="accent">Accent</tiaa-button>
-      <tiaa-button mat-button color="warn">Warn</tiaa-button>
+      <section>
+        <p class="example-label">Basic</p>
+        <div class="example-button-row">
+          <tiaa-button variant="basic">Basic</tiaa-button>
+          <tiaa-button variant="basic" color="primary">Primary</tiaa-button>
+          <tiaa-button variant="basic" color="accent">Accent</tiaa-button>
+          <tiaa-button variant="basic" color="warn">Warn</tiaa-button>
+          <tiaa-button variant="basic" disabled>Disabled</tiaa-button>
+          <a mat-button href="https://www.google.com/" target="_blank">Link</a>
+        </div>
+      </section>
+      <section>
+        <p class="example-label">Raised</p>
+        <div class="example-button-row">
+          <tiaa-button variant="raised" color="primary">Primary</tiaa-button>
+          <tiaa-button variant="raised" color="accent">Accent</tiaa-button>
+          <tiaa-button variant="raised" color="warn">Warn</tiaa-button>
+          <tiaa-button variant="raised" disabled>Disabled</tiaa-button>
+          <a mat-raised-button href="https://www.google.com/" target="_blank"
+            >Link</a
+          >
+        </div>
+        <tiaa-divider></tiaa-divider>
+      </section>
     </div>
   </div>
 

@@ -8,7 +8,12 @@
 
 @include mat.core-theme(custom.$tiaa-light-theme);
 
-// @include mat.all-component-colors(custom.$tiaa-light-theme);
+@include mat.all-component-colors(custom.$tiaa-light-theme);
+
+.dark-theme {
+  // @include mat.angular-material-color(custom.$tiaa-dark-theme);
+  @include mat.all-component-colors(custom.$tiaa-dark-theme);
+}
 
 html,
 body {

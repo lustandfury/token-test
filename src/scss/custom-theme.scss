@@ -39,6 +39,18 @@ $custom-cyan: (100: #B2EBF2,
 
 $cyan-palette: map.merge(mat.$cyan-palette, $custom-cyan);
 
+$custom-grays: (100: #F2F2F2,
+  200: #E6E6E6,
+  300: #C8C8C8,
+  400: #A0A0A0,
+  500: #78787D,
+  600: #5A5A5F,
+  700: #3C3C41,
+  800: #1C1C1E,
+);
+
+$grey-palette: map.merge(mat.$grey-palette, $custom-grays);
+
 $tiaa-dark-primary: mat.define-palette($indigo-palette, 400, 100, 300);
 $tiaa-dark-accent: mat.define-palette($blue-palette, 400, 100, 300);
 
@@ -60,13 +72,82 @@ $tiaa-dark-theme: mat.define-light-theme((color: (primary: $tiaa-light-primary,
   ));
 
 // pre-existing vars from theming/_palette.scss
-$dark-primary-text: $indigo-palette(100);
-$dark-secondary-text: mat.$grey-palette(A100);
-$dark-disabled-text: rgba(black, 0.38); //TODO: design should confirm
+$dark-primary-text: #FFFFFF; //TODO: design should confirm
+$dark-secondary-text: mat.$grey-palette(A100); //TODO: design should confirm
+$dark-disabled-text: rgba(#000000, 0.4); //TODO: design should confirm
 $dark-dividers: rgba(black, 0.12); //TODO: design should confirm
 $dark-focused: rgba(black, 0.12); //TODO: design should confirm
+
 $light-primary-text: $indigo-palette(400);
-$light-secondary-text: rgba(white, 0.7);
-$light-disabled-text: rgba(white, 0.5);
-$light-dividers: rgba(white, 0.12);
-$light-focused: rgba(white, 0.12);
+$light-secondary-text: rgba(white, 0.7); //TODO: design should confirm
+$light-disabled-text: rgba(white, 0.5); //TODO: design should confirm
+$light-dividers: rgba(white, 0.12); //TODO: design should confirm
+$light-focused: rgba(white, 0.12); //TODO: design should confirm
+
+$mat-light-theme-foreground: (base: black,
+  divider: $dark-dividers,
+  dividers: $dark-dividers,
+  disabled: $dark-disabled-text,
+  disabled-button: rgba(black, 0.26),
+  disabled-text: $dark-disabled-text,
+  hint-text: $dark-disabled-text,
+  secondary-text: $dark-secondary-text,
+  icon: rgba(black, 0.54),
+  icons: rgba(black, 0.54),
+  text: rgba(black, 0.87),
+  slider-min: rgba(black, 0.87),
+  slider-off: rgba(black, 0.26),
+  slider-off-active: rgba(black, 0.38),
+);
+
+// Background palette for light themes.
+$mat-light-theme-background: (status-bar: map_get($grey-palette, 300),
+  app-bar: map_get($grey-palette, 100),
+  background: map_get($grey-palette, 50),
+  hover: rgba(black, 0.04),
+  card: white,
+  dialog: white,
+  disabled-button: rgba(black, 0.12),
+  raised-button: white,
+  focused-button: $dark-focused,
+  selected-button: map_get($grey-palette, 300),
+  selected-disabled-button: map_get($grey-palette, 400),
+  disabled-button-toggle: map_get($grey-palette, 200),
+  unselected-chip: map_get($grey-palette, 300),
+  disabled-list-option: map_get($grey-palette, 200),
+);
+
+// Foreground palette for dark themes.
+$mat-dark-theme-foreground: (base: white,
+  divider: $light-dividers,
+  dividers: $light-dividers,
+  disabled: $light-disabled-text,
+  disabled-button: rgba(white, 0.3),
+  disabled-text: $light-disabled-text,
+  hint-text: $light-disabled-text,
+  secondary-text: $light-secondary-text,
+  icon: white,
+  icons: white,
+  text: white,
+  slider-min: white,
+  slider-off: rgba(white, 0.3),
+  slider-off-active: rgba(white, 0.3),
+);
+
+
+// Background palette for dark themes.
+$mat-dark-theme-background: (status-bar: black,
+  app-bar: map_get($grey-palette, 900), // TODO: check with design
+  background: #303030,
+  hover: rgba(white, 0.04), // TODO(kara): check style with Material Design UX
+  card: map_get($grey-palette, 800),
+  dialog: map_get($grey-palette, 800),
+  disabled-button: rgba(white, 0.12),
+  raised-button: map-get($grey-palette, 800),
+  focused-button: $light-focused,
+  selected-button: map_get($grey-palette, 900),
+  selected-disabled-button: map_get($grey-palette, 800),
+  disabled-button-toggle: black,
+  unselected-chip: map_get($grey-palette, 700),
+  disabled-list-option: black,
+);
