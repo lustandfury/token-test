@@ -1,4 +1,10 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  EventEmitter,
+  Input,
+  Output,
+} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
@@ -10,6 +16,7 @@ import { ThemePalette } from '@angular/material/core';
   imports: [CommonModule, MatButtonModule, MatIconModule],
   templateUrl: './button.component.html',
   styleUrls: ['../../../scss/custom-theme.scss', './button.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ButtonComponent {
   /**

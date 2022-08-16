@@ -3,4 +3,8 @@
 
 $_ripple-opacity: 0.1;
 
-@include mat.button-theme(custom.$tiaa-light-theme);
+@include mat.button-theme(custom.$theme);
+
+.dark-theme {
+  @include mat.button-theme(custom.$altTheme);
+}

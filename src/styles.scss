@@ -6,21 +6,16 @@
 
 @include mat.core(typography.$tiaa-typography);
 
-@include mat.core-theme(custom.$tiaa-light-theme);
+@include mat.core-theme(custom.$theme);
 
-@include mat.all-component-colors(custom.$tiaa-light-theme);
+@include mat.all-component-colors(custom.$theme);
 
 .dark-theme {
-  // @include mat.angular-material-color(custom.$tiaa-dark-theme);
-  @include mat.all-component-colors(custom.$tiaa-dark-theme);
+  @include mat.all-component-colors(custom.$altTheme);
 }
 
 html,
 body {
   height: 100%;
-}
-
-body {
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
 }

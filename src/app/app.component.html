@@ -8,34 +8,49 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 <style></style>
-
 <div>
-  <!-- This header will *not* be styled because it is outside `.mat-typography` -->
-  <h1>H1 Top header</h1>
-  <p>(Material Typography doesn't apply here)</p>
-  <hr />
+  <div>
+    <!-- This header will *not* be styled because it is outside `.mat-typography` -->
+    <h1>Unstyled Top header</h1>
+    <p>(Material Typography doesn't apply here)</p>
+    <hr />
 
-  <!-- This paragraph will be styled as `body-1` via the `.mat-body` CSS class applied -->
-  <p class="mat-body">Introductory text inside mat-body class</p>
-  <p class="mat-body-1">Body 1 text</p>
-  <p class="mat-body-2">Body 2 text</p>
-
-  <div class="mat-typography">
-    <!-- This header will be styled as `title` because it is inside `.mat-typography` -->
-    <h1>H1 header, .mat-headline</h1>
-    <h1 class="mat-h3">h1 tag using mat-h3 class</h1>
+    <!-- This paragraph will be styled as `body-1` via the `.mat-body` CSS class applied -->
+    <p class="mat-body">Introductory text inside .mat-body class</p>
+    <p class="mat-body-1">Body 1 text</p>
+    <p class="mat-body-2">Body 2 text</p>
+  </div>
+  <div class="mat-app-background mat-typography">
     <p>
-      Above header will be styled as `title` because it is inside
-      `.mat-typography`
+      This section contains the <code>.mat-app-background</code> class for the
+      <b>light theme.</b>
     </p>
-    <h2>h2 header</h2>
-    <h3>h3 header</h3>
-    <h4>h4 header</h4>
-    <h5>h5 header</h5>
-    <h6>h6 header</h6>
-    <div>
+    <section>
+      <h1>H1 header, .mat-headline</h1>
+      <h1 class="mat-h3">h1 tag using mat-h3 class</h1>
+      <h2 class="mat-h2">h2 tag using mat-h2 class</h2>
+      <p>
+        Above headers will be styled as `title` because it is inside
+        <code>.mat-typography</code>
+      </p>
+      <div>
+        The following headers are styled in paragraph (<code>`p`</code>) tags.
+
+        <p class="mat-display-4">Display 4</p>
+        <p class="mat-display-3">Display 3</p>
+        <p class="mat-display-3">Display 2</p>
+        <h4 class="mat-display-1">Display 1</h4>
+
+        <h1>h1 header</h1>
+        <h2>h2 header</h2>
+        <h3>h3 header</h3>
+        <h4>h4 header</h4>
+        <h5>h5 header</h5>
+        <h6>h6 header</h6>
+      </div>
+
       <section>
-        <p class="example-label">Basic</p>
+        <p class="example-label">Basic Buttons</p>
         <div class="example-button-row">
           <tiaa-button variant="basic">Basic</tiaa-button>
           <tiaa-button variant="basic" color="primary">Primary</tiaa-button>
@@ -46,7 +61,7 @@
         </div>
       </section>
       <section>
-        <p class="example-label">Raised</p>
+        <p class="example-label">Raised Buttons</p>
         <div class="example-button-row">
           <tiaa-button variant="raised" color="primary">Primary</tiaa-button>
           <tiaa-button variant="raised" color="accent">Accent</tiaa-button>
@@ -56,7 +71,66 @@
             >Link</a
           >
         </div>
+        <br />
         <tiaa-divider></tiaa-divider>
+        <br />
+        <tiaa-stepper>
+          <tiaa-step label="Step 1"></tiaa-step>
+          <tiaa-step label="Step 2"></tiaa-step>
+          <tiaa-step label="Step 3"></tiaa-step>
+        </tiaa-stepper>
+      </section>
+    </section>
+  </div>
+  <div class="dark-theme">
+    <div class="mat-app-background mat-typography">
+      <p>
+        This section contains the <code>.mat-app-background</code> class for the
+        <b>dark theme.</b>
+      </p>
+      <div>
+        The following headers are styled paragraph tags.
+        <p class="mat-display-4">Display 4</p>
+        <p class="mat-display-3">Display 3</p>
+        <p class="mat-display-3">Display 2</p>
+        <h4 class="mat-display-1">Display 1</h4>
+        <h1>h1 header</h1>
+        <h2>h2 header</h2>
+        <h3>h3 header</h3>
+        <h4>h4 header</h4>
+        <h5>h5 header</h5>
+        <h6>h6 header</h6>
+      </div>
+      <section>
+        <p class="example-label">Basic Buttons</p>
+        <div class="example-button-row">
+          <tiaa-button variant="basic">Basic</tiaa-button>
+          <tiaa-button variant="basic" color="primary">Primary</tiaa-button>
+          <tiaa-button variant="basic" color="accent">Accent</tiaa-button>
+          <tiaa-button variant="basic" color="warn">Warn</tiaa-button>
+          <tiaa-button variant="basic" disabled>Disabled</tiaa-button>
+          <a mat-button href="https://www.google.com/" target="_blank">Link</a>
+        </div>
+      </section>
+      <section>
+        <p class="example-label">Raised Buttons</p>
+        <div class="example-button-row">
+          <tiaa-button variant="raised" color="primary">Primary</tiaa-button>
+          <tiaa-button variant="raised" color="accent">Accent</tiaa-button>
+          <tiaa-button variant="raised" color="warn">Warn</tiaa-button>
+          <tiaa-button variant="raised" disabled>Disabled</tiaa-button>
+          <a mat-raised-button href="https://www.google.com/" target="_blank"
+            >Link</a
+          >
+        </div>
+        <br />
+        <tiaa-divider></tiaa-divider>
+        <br />
+        <tiaa-stepper>
+          <tiaa-step label="Step 1"></tiaa-step>
+          <tiaa-step label="Step 2"></tiaa-step>
+          <tiaa-step label="Step 3"></tiaa-step>
+        </tiaa-stepper>
       </section>
     </div>
   </div>

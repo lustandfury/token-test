@@ -1,0 +1,926 @@
+{
+    "pipes": [],
+    "interfaces": [],
+    "injectables": [],
+    "guards": [],
+    "interceptors": [],
+    "classes": [],
+    "directives": [],
+    "components": [
+        {
+            "name": "AppComponent",
+            "id": "component-AppComponent-d44e45f99acf12a229ded5a1f8fa0a1dece98ed0f65b71b9ada6052ba4a34ca06e50ded224d604f28420efbf9c9f4f09f7cf0b84053023268f9f1546d1f98b08",
+            "file": "src/app/app.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-root",
+            "styleUrls": [
+                "./app.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./app.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "title",
+                    "defaultValue": "'Angular Material Spike'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 9
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-root',\n  templateUrl: './app.component.html',\n  styleUrls: ['./app.component.scss'],\n})\nexport class AppComponent {\n  title = 'Angular Material Spike';\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./app.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->\n<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->\n<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->\n<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->\n<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->\n<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->\n<!-- * * * * * * * to get started with your project! * * * * * * * * -->\n<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->\n\n<style></style>\n\n<div>\n  <!-- This header will *not* be styled because it is outside `.mat-typography` -->\n  <h1>H1 Top header</h1>\n  <p>(Material Typography doesn't apply here)</p>\n  <hr />\n\n  <!-- This paragraph will be styled as `body-1` via the `.mat-body` CSS class applied -->\n  <p class=\"mat-body\">Introductory text inside .mat-body class</p>\n  <p class=\"mat-body-1\">Body 1 text</p>\n  <p class=\"mat-body-2\">Body 2 text</p>\n\n  <div class=\"mat-typography\">\n    <!-- This header will be styled as `title` because it is inside `.mat-typography` -->\n    <h1>H1 header, .mat-headline</h1>\n    <h1 class=\"mat-h3\">h1 tag using mat-h3 class</h1>\n    <h2 class=\"mat-h2\">h2 tag using mat-h2 class</h2>\n    <p>\n      Above headers will be styled as `title` because it is inside\n      `.mat-typography`\n    </p>\n    <div>\n      The following headers are styled paragraph tags.\n      <p class=\"mat-display-4\">Display 4</p>\n      <p class=\"mat-display-3\">Display 3</p>\n      <p class=\"mat-display-3\">Display 2</p>\n      <h4 class=\"mat-display-1\">Display 1</h4>\n\n      <h1>h1 header</h1>\n      <h2>h2 header</h2>\n      <h3>h3 header</h3>\n      <h4>h4 header</h4>\n      <h5>h5 header</h5>\n      <h6>h6 header</h6>\n    </div>\n    \n    <div class=\"mat-app-background\">\n      <p>\n        This section contains the `.mat-app-background` class for the current\n        theme.\n      </p>\n      <section>\n        <p class=\"example-label\">Basic Buttons</p>\n        <div class=\"example-button-row\">\n          <tiaa-button variant=\"basic\">Basic</tiaa-button>\n          <tiaa-button variant=\"basic\" color=\"primary\">Primary</tiaa-button>\n          <tiaa-button variant=\"basic\" color=\"accent\">Accent</tiaa-button>\n          <tiaa-button variant=\"basic\" color=\"warn\">Warn</tiaa-button>\n          <tiaa-button variant=\"basic\" disabled>Disabled</tiaa-button>\n          <a mat-button href=\"https://www.google.com/\" target=\"_blank\">Link</a>\n        </div>\n      </section>\n      <section>\n        <p class=\"example-label\">Raised Buttons</p>\n        <div class=\"example-button-row\">\n          <tiaa-button variant=\"raised\" color=\"primary\">Primary</tiaa-button>\n          <tiaa-button variant=\"raised\" color=\"accent\">Accent</tiaa-button>\n          <tiaa-button variant=\"raised\" color=\"warn\">Warn</tiaa-button>\n          <tiaa-button variant=\"raised\" disabled>Disabled</tiaa-button>\n          <a mat-raised-button href=\"https://www.google.com/\" target=\"_blank\"\n            >Link</a\n          >\n        </div>\n        <br />\n        <tiaa-divider></tiaa-divider>\n        <br />\n        <tiaa-stepper>\n          <tiaa-step label=\"Step 1\"></tiaa-step>\n          <tiaa-step label=\"Step 2\"></tiaa-step>\n          <tiaa-step label=\"Step 3\"></tiaa-step>\n        </tiaa-stepper>\n      </section>\n    </div>\n  </div>\n  <div class=\"dark-theme\">\n    <div class=\"mat-app-background\">\n      <p>\n        This section contains the `.mat-app-background` class for the current\n        theme.\n      </p>\n      <div>\n        The following headers are styled paragraph tags.\n        <p class=\"mat-display-4\">Display 4</p>\n        <p class=\"mat-display-3\">Display 3</p>\n        <p class=\"mat-display-3\">Display 2</p>\n        <h4 class=\"mat-display-1\">Display 1</h4>\n        <h1>h1 header</h1>\n        <h2>h2 header</h2>\n        <h3>h3 header</h3>\n        <h4>h4 header</h4>\n        <h5>h5 header</h5>\n        <h6>h6 header</h6>\n      </div>\n      <section>\n        <p class=\"example-label\">Basic Buttons</p>\n        <div class=\"example-button-row\">\n          <tiaa-button variant=\"basic\">Basic</tiaa-button>\n          <tiaa-button variant=\"basic\" color=\"primary\">Primary</tiaa-button>\n          <tiaa-button variant=\"basic\" color=\"accent\">Accent</tiaa-button>\n          <tiaa-button variant=\"basic\" color=\"warn\">Warn</tiaa-button>\n          <tiaa-button variant=\"basic\" disabled>Disabled</tiaa-button>\n          <a mat-button href=\"https://www.google.com/\" target=\"_blank\">Link</a>\n        </div>\n      </section>\n      <section>\n        <p class=\"example-label\">Raised Buttons</p>\n        <div class=\"example-button-row\">\n          <tiaa-button variant=\"raised\" color=\"primary\">Primary</tiaa-button>\n          <tiaa-button variant=\"raised\" color=\"accent\">Accent</tiaa-button>\n          <tiaa-button variant=\"raised\" color=\"warn\">Warn</tiaa-button>\n          <tiaa-button variant=\"raised\" disabled>Disabled</tiaa-button>\n          <a mat-raised-button href=\"https://www.google.com/\" target=\"_blank\"\n            >Link</a\n          >\n        </div>\n        <br />\n        <tiaa-divider></tiaa-divider>\n        <br />\n        <tiaa-stepper>\n          <tiaa-step label=\"Step 1\"></tiaa-step>\n          <tiaa-step label=\"Step 2\"></tiaa-step>\n          <tiaa-step label=\"Step 3\"></tiaa-step>\n        </tiaa-stepper>\n      </section>\n    </div>\n  </div>\n\n  <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->\n  <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->\n  <!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->\n  <!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->\n  <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->\n  <!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->\n  <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->\n\n  <router-outlet></router-outlet>\n</div>\n"
+        },
+        {
+            "name": "ButtonComponent",
+            "id": "component-ButtonComponent-57cd720ddf5abe1c2b3354adaba278284dcdd7b6e911020168aa3816011d782f1854326a4d165aa3b0c44db40ba057814cff3d5e26644516b87ddbace966afb7",
+            "file": "src/app/components/button/button.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "tiaa-button",
+            "styleUrls": [
+                "../../../scss/custom-theme.scss",
+                "./button.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./button.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "color",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 34,
+                    "type": "ThemePalette",
+                    "decorators": []
+                },
+                {
+                    "name": "icon",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 35,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "isDisabled",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 33,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "isIconButton",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "pos": 800,
+                            "end": 813,
+                            "flags": 4227072,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "kind": 325,
+                            "tagName": {
+                                "pos": 801,
+                                "end": 809,
+                                "flags": 4227072,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 79,
+                                "escapedText": "required"
+                            },
+                            "comment": ""
+                        }
+                    ],
+                    "rawdescription": "\n\nButton contents\n",
+                    "description": "<p>Button contents</p>\n",
+                    "line": 31,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "isRoundButton",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 32,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "label",
+                    "defaultValue": "'Button'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 26,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "size",
+                    "defaultValue": "'medium'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nButton Sizes\n",
+                    "description": "<p>Button Sizes</p>\n",
+                    "line": 25,
+                    "type": "\"small\" | \"medium\" | \"large\"",
+                    "decorators": []
+                },
+                {
+                    "name": "variant",
+                    "defaultValue": "'basic'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 36,
+                    "type": "\"basic\" | \"flat\" | \"stroke\" | \"text\" | \"raised\"",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "onClick",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 38,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import {\n  ChangeDetectionStrategy,\n  Component,\n  EventEmitter,\n  Input,\n  Output,\n} from '@angular/core';\nimport { CommonModule } from '@angular/common';\nimport { MatButtonModule } from '@angular/material/button';\nimport { MatIconModule } from '@angular/material/icon';\nimport { ThemePalette } from '@angular/material/core';\n\n@Component({\n  selector: 'tiaa-button',\n  standalone: true,\n  imports: [CommonModule, MatButtonModule, MatIconModule],\n  templateUrl: './button.component.html',\n  styleUrls: ['../../../scss/custom-theme.scss', './button.component.scss'],\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class ButtonComponent {\n  /**\n   * Button Sizes\n   */\n  @Input() size: 'small' | 'medium' | 'large' = 'medium';\n  @Input() label = 'Button';\n  /**\n   * Button contents\n   * @required\n   */\n  @Input() isIconButton: boolean = false;\n  @Input() isRoundButton: boolean = false;\n  @Input() isDisabled: boolean = false;\n  @Input() color: ThemePalette;\n  @Input() icon: string = '';\n  @Input() variant: 'basic' | 'flat' | 'stroke' | 'text' | 'raised' = 'basic';\n\n  @Output() onClick = new EventEmitter<Event>();\n\n  public get classes(): string[] {\n    return [`tiaa-button--${this.size}`];\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "/**\n* Generated theme by Material Theme Generator\n* https://materialtheme.arcsine.dev\n* Fork at: https://materialtheme.arcsine.dev/?c=YHBhbGV0dGU$YHByaW1hcnk$YF48IzAwNjdiOSIsIj9lcjwjYjNkMWVhIiwiO2VyPCMwMDRhYTJ$LCIlPmBePCMwMDgyZTYiLCI~ZXI8I2IzZGFmOCIsIjtlcjwjMDA2NWRifiwid2Fybj5gXjwjZmYwMDAwIiwiP2VyPCNmZmIzYjMiLCI7ZXI8I2ZmMDAwMH4sIj9UZXh0PCMwMDAwMDAiLCI~PTwjZmFmYWZhIiwiO1RleHQ8I2ZmZmZmZiIsIjs9PCMyYzJjMmN$LCJmb250cz5bYEA8KC00IiwibGluZUhlaWdodD42MCwic2l6ZT41Niwic3BhY2luZz4wfSxgQDwoLTMiLCJsaW5lSGVpZ2h0PjQ0LCJzaXplPjQwfSxgQDwoLTIiLCJsaW5lSGVpZ2h0PjM2LCJzaXplPjMyfSxgQDwoLTF$LGBAPGhlYWRsaW5lfixgQDx0aXRsZX4sYEA8c3ViKS0yfixgQDxzdWIpLTF$LGBAPGJvZHktMn4sYEA8Ym9keS0xfixgQDxidXR0b25$LGBAPGNhcHRpb25$LGBAPGlucHV0Iiwic2l6ZT5udWxsfV0sImljb25zPEZpbGxlZCIsIj9uZXNzPnRydWUsInZlcnNpb24$MTN9\n*/\n\n@use '@angular/material'as mat;\n\n// Include the common styles for Angular Material. We include this here so that you only\n// have to load a single css file for Angular Material in your app.\n\n// Fonts\n@import 'https://fonts.googleapis.com/icon?family=Material+Icons';\n@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');\n\n$fontConfig: (display-4: mat.define-typography-level(56px, 60px, 300, 'Roboto', 0.0000em),\n  display-3: mat.define-typography-level(40px, 44px, 400, 'Roboto', -0.0125em),\n  display-2: mat.define-typography-level(32px, 36px, 400, 'Roboto', 0.0000em),\n  display-1: mat.define-typography-level(34px, 40px, 400, 'Roboto', 0.0074em),\n  headline: mat.define-typography-level(24px, 32px, 400, 'Roboto', 0.0000em),\n  title: mat.define-typography-level(20px, 32px, 500, 'Roboto', 0.0075em),\n  subheading-2: mat.define-typography-level(16px, 28px, 400, 'Roboto', 0.0094em),\n  subheading-1: mat.define-typography-level(15px, 24px, 500, 'Roboto', 0.0067em),\n  body-2: mat.define-typography-level(14px, 24px, 500, 'Roboto', 0.0179em),\n  body-1: mat.define-typography-level(14px, 20px, 400, 'Roboto', 0.0179em),\n  button: mat.define-typography-level(14px, 14px, 500, 'Roboto', 0.0893em),\n  caption: mat.define-typography-level(12px, 20px, 400, 'Roboto', 0.0333em),\n  input: mat.define-typography-level(inherit, 1.125, 400, 'Roboto', 1.5px));\n\n// Foreground Elements\n\n// Light Theme Text\n$dark-text: #000000;\n$dark-primary-text: rgba($dark-text, 0.87);\n$dark-accent-text: rgba($dark-primary-text, 0.54);\n$dark-disabled-text: rgba($dark-primary-text, 0.38);\n$dark-dividers: rgba($dark-primary-text, 0.12);\n$dark-focused: rgba($dark-primary-text, 0.12);\n\n$mat-light-theme-foreground: (base: black,\n  divider: $dark-dividers,\n  dividers: $dark-dividers,\n  disabled: $dark-disabled-text,\n  disabled-button: rgba($dark-text, 0.26),\n  disabled-text: $dark-disabled-text,\n  elevation: black,\n  secondary-text: $dark-accent-text,\n  hint-text: $dark-disabled-text,\n  accent-text: $dark-accent-text,\n  icon: $dark-accent-text,\n  icons: $dark-accent-text,\n  text: $dark-primary-text,\n  slider-min: $dark-primary-text,\n  slider-off: rgba($dark-text, 0.26),\n  slider-off-active: $dark-disabled-text,\n);\n\n// Dark Theme text\n$light-text: #ffffff;\n$light-primary-text: $light-text;\n$light-accent-text: rgba($light-primary-text, 0.7);\n$light-disabled-text: rgba($light-primary-text, 0.5);\n$light-dividers: rgba($light-primary-text, 0.12);\n$light-focused: rgba($light-primary-text, 0.12);\n\n$mat-dark-theme-foreground: (base: $light-text,\n  divider: $light-dividers,\n  dividers: $light-dividers,\n  disabled: $light-disabled-text,\n  disabled-button: rgba($light-text, 0.3),\n  disabled-text: $light-disabled-text,\n  elevation: black,\n  hint-text: $light-disabled-text,\n  secondary-text: $light-accent-text,\n  accent-text: $light-accent-text,\n  icon: $light-text,\n  icons: $light-text,\n  text: $light-text,\n  slider-min: $light-text,\n  slider-off: rgba($light-text, 0.3),\n  slider-off-active: rgba($light-text, 0.3),\n);\n\n// Background config\n// Light bg\n$light-background: #fafafa;\n$light-bg-darker-5: darken($light-background, 5%);\n$light-bg-darker-10: darken($light-background, 10%);\n$light-bg-darker-20: darken($light-background, 20%);\n$light-bg-darker-30: darken($light-background, 30%);\n$light-bg-lighter-5: lighten($light-background, 5%);\n$dark-bg-tooltip: lighten(#2c2c2c, 20%);\n$dark-bg-alpha-4: rgba(#2c2c2c, 0.04);\n$dark-bg-alpha-12: rgba(#2c2c2c, 0.12);\n\n$mat-light-theme-background: (background: $light-background,\n  status-bar: $light-bg-darker-20,\n  app-bar: $light-bg-darker-5,\n  hover: $dark-bg-alpha-4,\n  card: $light-bg-lighter-5,\n  dialog: $light-bg-lighter-5,\n  tooltip: $dark-bg-tooltip,\n  disabled-button: $dark-bg-alpha-12,\n  raised-button: $light-bg-lighter-5,\n  focused-button: $dark-focused,\n  selected-button: $light-bg-darker-20,\n  selected-disabled-button: $light-bg-darker-30,\n  disabled-button-toggle: $light-bg-darker-10,\n  unselected-chip: $light-bg-darker-10,\n  disabled-list-option: $light-bg-darker-10,\n);\n\n// Dark bg\n$dark-background: #2c2c2c;\n$dark-bg-lighter-5: lighten($dark-background, 5%);\n$dark-bg-lighter-10: lighten($dark-background, 10%);\n$dark-bg-lighter-20: lighten($dark-background, 20%);\n$dark-bg-lighter-30: lighten($dark-background, 30%);\n$light-bg-alpha-4: rgba(#fafafa, 0.04);\n$light-bg-alpha-12: rgba(#fafafa, 0.12);\n\n// Background palette for dark themes.\n$mat-dark-theme-background: (background: $dark-background,\n  status-bar: $dark-bg-lighter-20,\n  app-bar: $dark-bg-lighter-5,\n  hover: $light-bg-alpha-4,\n  card: $dark-bg-lighter-5,\n  dialog: $dark-bg-lighter-5,\n  tooltip: $dark-bg-lighter-20,\n  disabled-button: $light-bg-alpha-12,\n  raised-button: $dark-bg-lighter-5,\n  focused-button: $light-focused,\n  selected-button: $dark-bg-lighter-20,\n  selected-disabled-button: $dark-bg-lighter-30,\n  disabled-button-toggle: $dark-bg-lighter-10,\n  unselected-chip: $dark-bg-lighter-20,\n  disabled-list-option: $dark-bg-lighter-10,\n);\n\n// Compute font config\n@include mat.core($fontConfig);\n\n// Theme Config\n\nbody {\n  --primary-color: #0067b9;\n  --primary-lighter-color: #b3d1ea;\n  --primary-darker-color: #004aa2;\n  --text-primary-color: #{$light-primary-text};\n  --text-primary-lighter-color: #{$dark-primary-text};\n  --text-primary-darker-color: #{$light-primary-text};\n}\n\n$mat-primary: (main: #0067b9,\n  lighter: #b3d1ea,\n  darker: #004aa2,\n  200: #0067b9, // For slide toggle,\n  contrast : (main: $light-primary-text,\n    lighter: $dark-primary-text,\n    darker: $light-primary-text,\n  ));\n$theme-primary: mat.define-palette($mat-primary, main, lighter, darker);\n\n\nbody {\n  --accent-color: #0082e6;\n  --accent-lighter-color: #b3daf8;\n  --accent-darker-color: #0065db;\n  --text-accent-color: #{$light-primary-text};\n  --text-accent-lighter-color: #{$dark-primary-text};\n  --text-accent-darker-color: #{$light-primary-text};\n}\n\n$mat-accent: (main: #0082e6,\n  lighter: #b3daf8,\n  darker: #0065db,\n  200: #0082e6, // For slide toggle,\n  contrast : (main: $light-primary-text,\n    lighter: $dark-primary-text,\n    darker: $light-primary-text,\n  ));\n$theme-accent: mat.define-palette($mat-accent, main, lighter, darker);\n\n\nbody {\n  --warn-color: #ff0000;\n  --warn-lighter-color: #ffb3b3;\n  --warn-darker-color: #ff0000;\n  --text-warn-color: #{$light-primary-text};\n  --text-warn-lighter-color: #{$dark-primary-text};\n  --text-warn-darker-color: #{$light-primary-text};\n}\n\n$mat-warn: (main: #ff0000,\n  lighter: #ffb3b3,\n  darker: #ff0000,\n  200: #ff0000, // For slide toggle,\n  contrast : (main: $light-primary-text,\n    lighter: $dark-primary-text,\n    darker: $light-primary-text,\n  ));\n$theme-warn: mat.define-palette($mat-warn, main, lighter, darker);\n\n$theme: (primary: $theme-primary,\n  accent: $theme-accent,\n  warn: $theme-warn,\n  is-dark: false,\n  foreground: $mat-light-theme-foreground,\n  background: $mat-light-theme-background,\n);\n$altTheme: (primary: $theme-primary,\n  accent: $theme-accent,\n  warn: $theme-warn,\n  is-dark: true,\n  foreground: $mat-dark-theme-foreground,\n  background: $mat-dark-theme-background,\n);\n\n// Theme Init\n@include mat.all-component-themes($theme);\n\n.theme-alternate {\n  @include mat.all-component-themes($altTheme);\n}",
+                    "styleUrl": "../../../scss/custom-theme.scss"
+                },
+                {
+                    "data": "@use '@angular/material'as mat;\n@use 'src/scss/custom-theme'as custom;\n\n$_ripple-opacity: 0.1;\n\n@include mat.button-theme(custom.$theme);\n\n.dark-theme {\n  @include mat.button-theme(custom.$altTheme);\n}",
+                    "styleUrl": "./button.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "accessors": {
+                "classes": {
+                    "name": "classes",
+                    "getSignature": {
+                        "name": "classes",
+                        "type": "[]",
+                        "returnType": "string[]",
+                        "line": 40
+                    }
+                }
+            },
+            "templateData": "<button\n  ngClass=\"{{ classes }}\"\n  *ngIf=\"variant === 'basic'\"\n  color=\"{{ color }}\"\n  mat-button\n  [disabled]=\"isDisabled\"\n  (click)=\"onClick.emit($event)\"\n>\n  {{ label }}\n</button>\n\n<button\n  ngClass=\"{{ classes }}\"\n  *ngIf=\"variant === 'raised'\"\n  color=\"{{ color }}\"\n  mat-raised-button\n  [disabled]=\"isDisabled\"\n  (click)=\"onClick.emit($event)\"\n>\n  {{ label }}\n</button>\n\n<button\n  *ngIf=\"variant === 'flat'\"\n  ngClass=\"{{ classes }}\"\n  color=\"{{ color }}\"\n  mat-flat-button\n  [disabled]=\"isDisabled\"\n  (click)=\"onClick.emit($event)\"\n  value=\"{{ label }}\"\n>\n  {{ label }}\n</button>\n\n<button\n  *ngIf=\"variant === 'stroke'\"\n  ngClass=\"{{ classes }}\"\n  color=\"{{ color }}\"\n  mat-stroked-button\n  [disabled]=\"isDisabled\"\n  (click)=\"onClick.emit($event)\"\n>\n  {{ label }}\n</button>\n\n<button\n  *ngIf=\"variant === 'text'\"\n  ngClass=\"{{ classes }}\"\n  mat-button\n  color=\"{{ color }}\"\n  [disabled]=\"isDisabled\"\n  (click)=\"onClick.emit($event)\"\n  value=\"{{ label }}\"\n>\n  {{ label }}\n</button>\n\n<button\n  *ngIf=\"isIconButton\"\n  ngClass=\"{{ classes }}\"\n  mat-icon-button\n  color=\"{{ color }}\"\n  [disabled]=\"isDisabled\"\n>\n  <mat-icon>{{ icon }}</mat-icon>\n</button>\n"
+        },
+        {
+            "name": "DividerComponent",
+            "id": "component-DividerComponent-f6fc69814a73ef8bc39317d080ee4a352ced03e5eb741437c98cf555fee333339739b38fa443209c452697afd97bc002eda0436571e3550fc466091aca95274f",
+            "file": "src/app/components/divider/divider.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "tiaa-divider",
+            "styleUrls": [
+                "../../../scss/custom-theme.scss",
+                "./divider.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./divider.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "inset",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 13,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "vertical",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 14,
+                    "type": "boolean",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input } from '@angular/core';\nimport { CommonModule } from '@angular/common';\nimport { MatDividerModule } from '@angular/material/divider';\n@Component({\n  selector: 'tiaa-divider',\n  standalone: true,\n  imports: [CommonModule, MatDividerModule],\n  templateUrl: './divider.component.html',\n  styleUrls: ['../../../scss/custom-theme.scss', './divider.component.scss'],\n})\nexport class DividerComponent {\n  constructor() {}\n  @Input() inset: boolean = false;\n  @Input() vertical: boolean = false;\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "/**\n* Generated theme by Material Theme Generator\n* https://materialtheme.arcsine.dev\n* Fork at: https://materialtheme.arcsine.dev/?c=YHBhbGV0dGU$YHByaW1hcnk$YF48IzAwNjdiOSIsIj9lcjwjYjNkMWVhIiwiO2VyPCMwMDRhYTJ$LCIlPmBePCMwMDgyZTYiLCI~ZXI8I2IzZGFmOCIsIjtlcjwjMDA2NWRifiwid2Fybj5gXjwjZmYwMDAwIiwiP2VyPCNmZmIzYjMiLCI7ZXI8I2ZmMDAwMH4sIj9UZXh0PCMwMDAwMDAiLCI~PTwjZmFmYWZhIiwiO1RleHQ8I2ZmZmZmZiIsIjs9PCMyYzJjMmN$LCJmb250cz5bYEA8KC00IiwibGluZUhlaWdodD42MCwic2l6ZT41Niwic3BhY2luZz4wfSxgQDwoLTMiLCJsaW5lSGVpZ2h0PjQ0LCJzaXplPjQwfSxgQDwoLTIiLCJsaW5lSGVpZ2h0PjM2LCJzaXplPjMyfSxgQDwoLTF$LGBAPGhlYWRsaW5lfixgQDx0aXRsZX4sYEA8c3ViKS0yfixgQDxzdWIpLTF$LGBAPGJvZHktMn4sYEA8Ym9keS0xfixgQDxidXR0b25$LGBAPGNhcHRpb25$LGBAPGlucHV0Iiwic2l6ZT5udWxsfV0sImljb25zPEZpbGxlZCIsIj9uZXNzPnRydWUsInZlcnNpb24$MTN9\n*/\n\n@use '@angular/material'as mat;\n\n// Include the common styles for Angular Material. We include this here so that you only\n// have to load a single css file for Angular Material in your app.\n\n// Fonts\n@import 'https://fonts.googleapis.com/icon?family=Material+Icons';\n@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');\n\n$fontConfig: (display-4: mat.define-typography-level(56px, 60px, 300, 'Roboto', 0.0000em),\n  display-3: mat.define-typography-level(40px, 44px, 400, 'Roboto', -0.0125em),\n  display-2: mat.define-typography-level(32px, 36px, 400, 'Roboto', 0.0000em),\n  display-1: mat.define-typography-level(34px, 40px, 400, 'Roboto', 0.0074em),\n  headline: mat.define-typography-level(24px, 32px, 400, 'Roboto', 0.0000em),\n  title: mat.define-typography-level(20px, 32px, 500, 'Roboto', 0.0075em),\n  subheading-2: mat.define-typography-level(16px, 28px, 400, 'Roboto', 0.0094em),\n  subheading-1: mat.define-typography-level(15px, 24px, 500, 'Roboto', 0.0067em),\n  body-2: mat.define-typography-level(14px, 24px, 500, 'Roboto', 0.0179em),\n  body-1: mat.define-typography-level(14px, 20px, 400, 'Roboto', 0.0179em),\n  button: mat.define-typography-level(14px, 14px, 500, 'Roboto', 0.0893em),\n  caption: mat.define-typography-level(12px, 20px, 400, 'Roboto', 0.0333em),\n  input: mat.define-typography-level(inherit, 1.125, 400, 'Roboto', 1.5px));\n\n// Foreground Elements\n\n// Light Theme Text\n$dark-text: #000000;\n$dark-primary-text: rgba($dark-text, 0.87);\n$dark-accent-text: rgba($dark-primary-text, 0.54);\n$dark-disabled-text: rgba($dark-primary-text, 0.38);\n$dark-dividers: rgba($dark-primary-text, 0.12);\n$dark-focused: rgba($dark-primary-text, 0.12);\n\n$mat-light-theme-foreground: (base: black,\n  divider: $dark-dividers,\n  dividers: $dark-dividers,\n  disabled: $dark-disabled-text,\n  disabled-button: rgba($dark-text, 0.26),\n  disabled-text: $dark-disabled-text,\n  elevation: black,\n  secondary-text: $dark-accent-text,\n  hint-text: $dark-disabled-text,\n  accent-text: $dark-accent-text,\n  icon: $dark-accent-text,\n  icons: $dark-accent-text,\n  text: $dark-primary-text,\n  slider-min: $dark-primary-text,\n  slider-off: rgba($dark-text, 0.26),\n  slider-off-active: $dark-disabled-text,\n);\n\n// Dark Theme text\n$light-text: #ffffff;\n$light-primary-text: $light-text;\n$light-accent-text: rgba($light-primary-text, 0.7);\n$light-disabled-text: rgba($light-primary-text, 0.5);\n$light-dividers: rgba($light-primary-text, 0.12);\n$light-focused: rgba($light-primary-text, 0.12);\n\n$mat-dark-theme-foreground: (base: $light-text,\n  divider: $light-dividers,\n  dividers: $light-dividers,\n  disabled: $light-disabled-text,\n  disabled-button: rgba($light-text, 0.3),\n  disabled-text: $light-disabled-text,\n  elevation: black,\n  hint-text: $light-disabled-text,\n  secondary-text: $light-accent-text,\n  accent-text: $light-accent-text,\n  icon: $light-text,\n  icons: $light-text,\n  text: $light-text,\n  slider-min: $light-text,\n  slider-off: rgba($light-text, 0.3),\n  slider-off-active: rgba($light-text, 0.3),\n);\n\n// Background config\n// Light bg\n$light-background: #fafafa;\n$light-bg-darker-5: darken($light-background, 5%);\n$light-bg-darker-10: darken($light-background, 10%);\n$light-bg-darker-20: darken($light-background, 20%);\n$light-bg-darker-30: darken($light-background, 30%);\n$light-bg-lighter-5: lighten($light-background, 5%);\n$dark-bg-tooltip: lighten(#2c2c2c, 20%);\n$dark-bg-alpha-4: rgba(#2c2c2c, 0.04);\n$dark-bg-alpha-12: rgba(#2c2c2c, 0.12);\n\n$mat-light-theme-background: (background: $light-background,\n  status-bar: $light-bg-darker-20,\n  app-bar: $light-bg-darker-5,\n  hover: $dark-bg-alpha-4,\n  card: $light-bg-lighter-5,\n  dialog: $light-bg-lighter-5,\n  tooltip: $dark-bg-tooltip,\n  disabled-button: $dark-bg-alpha-12,\n  raised-button: $light-bg-lighter-5,\n  focused-button: $dark-focused,\n  selected-button: $light-bg-darker-20,\n  selected-disabled-button: $light-bg-darker-30,\n  disabled-button-toggle: $light-bg-darker-10,\n  unselected-chip: $light-bg-darker-10,\n  disabled-list-option: $light-bg-darker-10,\n);\n\n// Dark bg\n$dark-background: #2c2c2c;\n$dark-bg-lighter-5: lighten($dark-background, 5%);\n$dark-bg-lighter-10: lighten($dark-background, 10%);\n$dark-bg-lighter-20: lighten($dark-background, 20%);\n$dark-bg-lighter-30: lighten($dark-background, 30%);\n$light-bg-alpha-4: rgba(#fafafa, 0.04);\n$light-bg-alpha-12: rgba(#fafafa, 0.12);\n\n// Background palette for dark themes.\n$mat-dark-theme-background: (background: $dark-background,\n  status-bar: $dark-bg-lighter-20,\n  app-bar: $dark-bg-lighter-5,\n  hover: $light-bg-alpha-4,\n  card: $dark-bg-lighter-5,\n  dialog: $dark-bg-lighter-5,\n  tooltip: $dark-bg-lighter-20,\n  disabled-button: $light-bg-alpha-12,\n  raised-button: $dark-bg-lighter-5,\n  focused-button: $light-focused,\n  selected-button: $dark-bg-lighter-20,\n  selected-disabled-button: $dark-bg-lighter-30,\n  disabled-button-toggle: $dark-bg-lighter-10,\n  unselected-chip: $dark-bg-lighter-20,\n  disabled-list-option: $dark-bg-lighter-10,\n);\n\n// Compute font config\n@include mat.core($fontConfig);\n\n// Theme Config\n\nbody {\n  --primary-color: #0067b9;\n  --primary-lighter-color: #b3d1ea;\n  --primary-darker-color: #004aa2;\n  --text-primary-color: #{$light-primary-text};\n  --text-primary-lighter-color: #{$dark-primary-text};\n  --text-primary-darker-color: #{$light-primary-text};\n}\n\n$mat-primary: (main: #0067b9,\n  lighter: #b3d1ea,\n  darker: #004aa2,\n  200: #0067b9, // For slide toggle,\n  contrast : (main: $light-primary-text,\n    lighter: $dark-primary-text,\n    darker: $light-primary-text,\n  ));\n$theme-primary: mat.define-palette($mat-primary, main, lighter, darker);\n\n\nbody {\n  --accent-color: #0082e6;\n  --accent-lighter-color: #b3daf8;\n  --accent-darker-color: #0065db;\n  --text-accent-color: #{$light-primary-text};\n  --text-accent-lighter-color: #{$dark-primary-text};\n  --text-accent-darker-color: #{$light-primary-text};\n}\n\n$mat-accent: (main: #0082e6,\n  lighter: #b3daf8,\n  darker: #0065db,\n  200: #0082e6, // For slide toggle,\n  contrast : (main: $light-primary-text,\n    lighter: $dark-primary-text,\n    darker: $light-primary-text,\n  ));\n$theme-accent: mat.define-palette($mat-accent, main, lighter, darker);\n\n\nbody {\n  --warn-color: #ff0000;\n  --warn-lighter-color: #ffb3b3;\n  --warn-darker-color: #ff0000;\n  --text-warn-color: #{$light-primary-text};\n  --text-warn-lighter-color: #{$dark-primary-text};\n  --text-warn-darker-color: #{$light-primary-text};\n}\n\n$mat-warn: (main: #ff0000,\n  lighter: #ffb3b3,\n  darker: #ff0000,\n  200: #ff0000, // For slide toggle,\n  contrast : (main: $light-primary-text,\n    lighter: $dark-primary-text,\n    darker: $light-primary-text,\n  ));\n$theme-warn: mat.define-palette($mat-warn, main, lighter, darker);\n\n$theme: (primary: $theme-primary,\n  accent: $theme-accent,\n  warn: $theme-warn,\n  is-dark: false,\n  foreground: $mat-light-theme-foreground,\n  background: $mat-light-theme-background,\n);\n$altTheme: (primary: $theme-primary,\n  accent: $theme-accent,\n  warn: $theme-warn,\n  is-dark: true,\n  foreground: $mat-dark-theme-foreground,\n  background: $mat-dark-theme-background,\n);\n\n// Theme Init\n@include mat.all-component-themes($theme);\n\n.theme-alternate {\n  @include mat.all-component-themes($altTheme);\n}",
+                    "styleUrl": "../../../scss/custom-theme.scss"
+                },
+                {
+                    "data": "",
+                    "styleUrl": "./divider.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 11
+            },
+            "templateData": "<mat-divider inset=\"{{ inset }}\" vertical=\"{{ vertical }}\"></mat-divider>\n"
+        },
+        {
+            "name": "StepperComponent",
+            "id": "component-StepperComponent-31005168e2ea608520843870e54cbfd1123ac073b0b642572e42c6306015535a7530e6b50f158b9e736b5e277371c02e262b6aa3c84aa81a01b4a50484e5f034",
+            "file": "src/app/components/stepper/stepper.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "tiaa-stepper",
+            "styleUrls": [
+                "stepper.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "stepper.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "firstFormGroup",
+                    "defaultValue": "this._formBuilder.group({\n    firstCtrl: ['', Validators.required],\n  }) as FormGroup",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 40
+                },
+                {
+                    "name": "isLinear",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 38
+                },
+                {
+                    "name": "secondFormGroup",
+                    "defaultValue": "this._formBuilder.group({\n    secondCtrl: ['', Validators.required],\n  }) as FormGroup",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 43
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\nimport {\n  FormBuilder,\n  FormGroup,\n  FormsModule,\n  ReactiveFormsModule,\n  Validators,\n} from '@angular/forms';\nimport { MatButtonModule } from '@angular/material/button';\nimport { MatIconModule } from '@angular/material/icon';\nimport { MatStepperModule } from '@angular/material/stepper';\nimport { MatInputModule } from '@angular/material/input';\nimport { MatFormFieldModule } from '@angular/material/form-field';\nimport { CommonModule } from '@angular/common';\nimport { MatDividerModule } from '@angular/material/divider';\n\n/**\n * @title Stepper overview\n */\n@Component({\n  selector: 'tiaa-stepper',\n  standalone: true,\n  imports: [\n    MatStepperModule,\n    MatInputModule,\n    MatButtonModule,\n    MatIconModule,\n    FormsModule,\n    ReactiveFormsModule,\n    MatFormFieldModule,\n    CommonModule,\n    MatDividerModule,\n  ],\n  templateUrl: 'stepper.component.html',\n  styleUrls: ['stepper.component.scss'],\n})\nexport class StepperComponent {\n  isLinear = false;\n\n  firstFormGroup = this._formBuilder.group({\n    firstCtrl: ['', Validators.required],\n  }) as FormGroup;\n  secondFormGroup = this._formBuilder.group({\n    secondCtrl: ['', Validators.required],\n  }) as FormGroup;\n\n  constructor(private _formBuilder: FormBuilder) {}\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "stepper.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "_formBuilder",
+                        "type": "FormBuilder",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 45,
+                "jsdoctags": [
+                    {
+                        "name": "_formBuilder",
+                        "type": "FormBuilder",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "templateData": "<button mat-raised-button (click)=\"isLinear = !isLinear\" id=\"toggle-linear\">\n  {{ !isLinear ? \"Enable linear mode\" : \"Disable linear mode\" }}\n</button>\n<mat-stepper [linear]=\"isLinear\" #stepper>\n  <mat-step [stepControl]=\"firstFormGroup\">\n    <form [formGroup]=\"firstFormGroup\">\n      <ng-template matStepLabel>Fill out your name</ng-template>\n      <mat-form-field appearance=\"fill\">\n        <mat-label>Name</mat-label>\n        <input\n          matInput\n          placeholder=\"Last name, First name\"\n          formControlName=\"firstCtrl\"\n          required\n        />\n      </mat-form-field>\n      <div>\n        <button mat-button matStepperNext>Next</button>\n      </div>\n    </form>\n  </mat-step>\n  <mat-step [stepControl]=\"secondFormGroup\" label=\"Fill out your address\">\n    <form [formGroup]=\"secondFormGroup\">\n      <mat-form-field appearance=\"fill\">\n        <mat-label>Address</mat-label>\n        <input\n          matInput\n          formControlName=\"secondCtrl\"\n          placeholder=\"Ex. 1 Main St, New York, NY\"\n          required\n        />\n      </mat-form-field>\n      <div>\n        <button mat-button matStepperPrevious>Back</button>\n        <button mat-button matStepperNext>Next</button>\n      </div>\n    </form>\n  </mat-step>\n  <mat-step>\n    <ng-template matStepLabel>Done</ng-template>\n    <p>You are now done.</p>\n    <div>\n      <button mat-button matStepperPrevious>Back</button>\n      <button mat-button (click)=\"stepper.reset()\">Reset</button>\n    </div>\n  </mat-step>\n</mat-stepper>\n"
+        }
+    ],
+    "modules": [
+        {
+            "name": "AppModule",
+            "id": "module-AppModule-ccc0f7dcb6fa8a832dff22e21bb5843ce8e7d1125fb95a11b35761e701013c4ef6137fc5627f0cff5d6b253c650c246b31a73847e260eff151ca249f43f14403",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/app.module.ts",
+            "methods": [],
+            "sourceCode": "import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';\nimport { BrowserModule } from '@angular/platform-browser';\n\nimport { AppRoutingModule } from './app-routing.module';\nimport { AppComponent } from './app.component';\nimport { ButtonComponent } from './components/button/button.component';\nimport { DividerComponent } from './components/divider/divider.component';\nimport { StepperComponent } from './components/stepper/stepper.component';\nimport { BrowserAnimationsModule } from '@angular/platform-browser/animations';\n\n@NgModule({\n  declarations: [AppComponent],\n  imports: [\n    BrowserModule,\n    AppRoutingModule,\n    ButtonComponent,\n    DividerComponent,\n    StepperComponent,\n    BrowserAnimationsModule,\n  ],\n  providers: [],\n  bootstrap: [AppComponent],\n  schemas: [CUSTOM_ELEMENTS_SCHEMA],\n})\nexport class AppModule {}\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "AppComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": [
+                        {
+                            "name": "AppRoutingModule"
+                        },
+                        {
+                            "name": "ButtonComponent"
+                        },
+                        {
+                            "name": "DividerComponent"
+                        },
+                        {
+                            "name": "StepperComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": [
+                        {
+                            "name": "AppComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "AppRoutingModule",
+            "id": "module-AppRoutingModule-78922b3ae99d2c5249b333980bd5afde1b120b2cc6fedfd41b8b2cc90f279797cb4b22e183bf7e1d1dfab8c6100e77e7812c110234d81f866f544f28a3e18b15",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/app-routing.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { RouterModule, Routes } from '@angular/router';\n\nconst routes: Routes = [];\n\n@NgModule({\n  imports: [RouterModule.forRoot(routes)],\n  exports: [RouterModule]\n})\nexport class AppRoutingModule { }\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": []
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        }
+    ],
+    "miscellaneous": {
+        "variables": [
+            {
+                "name": "context",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/test.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/environments/environment.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n  production: false\n}"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/environments/environment.prod.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n  production: true\n}"
+            },
+            {
+                "name": "Large",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "parameters",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": ".storybook/preview.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n  actions: { argTypesRegex: \"^on[A-Z].*\" },\n  controls: {\n    matchers: {\n      color: /(background|color)$/i,\n      date: /Date$/,\n    },\n  },\n  docs: { inlineStories: true },\n}"
+            },
+            {
+                "name": "Primary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "require",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/test.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "literal type"
+            },
+            {
+                "name": "Secondary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Small",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Stepper",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/stepper/stepper.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<ButtonComponent>",
+                "defaultValue": "(args: ButtonComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/stepper/stepper.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<StepperComponent>",
+                "defaultValue": "(args: StepperComponent) => ({\n  props: args,\n})"
+            }
+        ],
+        "functions": [],
+        "typealiases": [],
+        "enumerations": [],
+        "groupedVariables": {
+            "src/test.ts": [
+                {
+                    "name": "context",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/test.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+                },
+                {
+                    "name": "require",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/test.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "literal type"
+                }
+            ],
+            "src/environments/environment.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/environments/environment.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n  production: false\n}"
+                }
+            ],
+            "src/environments/environment.prod.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/environments/environment.prod.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n  production: true\n}"
+                }
+            ],
+            "src/app/components/button/button.stories.ts": [
+                {
+                    "name": "Large",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/button/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Primary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/button/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Secondary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/button/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Small",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/button/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/button/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<ButtonComponent>",
+                    "defaultValue": "(args: ButtonComponent) => ({\n  props: args,\n})"
+                }
+            ],
+            ".storybook/preview.ts": [
+                {
+                    "name": "parameters",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": ".storybook/preview.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n  actions: { argTypesRegex: \"^on[A-Z].*\" },\n  controls: {\n    matchers: {\n      color: /(background|color)$/i,\n      date: /Date$/,\n    },\n  },\n  docs: { inlineStories: true },\n}"
+                }
+            ],
+            "src/app/components/stepper/stepper.stories.ts": [
+                {
+                    "name": "Stepper",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/stepper/stepper.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/stepper/stepper.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<StepperComponent>",
+                    "defaultValue": "(args: StepperComponent) => ({\n  props: args,\n})"
+                }
+            ]
+        },
+        "groupedFunctions": {},
+        "groupedEnumerations": {},
+        "groupedTypeAliases": {}
+    },
+    "routes": {
+        "name": "<root>",
+        "kind": "module",
+        "className": "AppModule",
+        "children": [
+            {
+                "name": "routes",
+                "filename": "src/app/app-routing.module.ts",
+                "module": "AppRoutingModule",
+                "children": [],
+                "kind": "module"
+            }
+        ]
+    },
+    "coverage": {
+        "count": 1,
+        "status": "low",
+        "files": [
+            {
+                "filePath": ".storybook/preview.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "parameters",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/app.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "AppComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/button/button.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ButtonComponent",
+                "coveragePercent": 20,
+                "coverageCount": "2/10",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Large",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Primary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Secondary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Small",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/divider/divider.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "DividerComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/stepper/stepper.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "StepperComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/stepper/stepper.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Stepper",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/stepper/stepper.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/environments/environment.prod.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "environment",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/environments/environment.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "environment",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/test.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "context",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/test.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "require",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            }
+        ]
+    }
+}
