@@ -48,9 +48,8 @@
         <h5>h5 header</h5>
         <h6>h6 header</h6>
       </div>
-
       <section>
-        <p class="example-label">Basic Buttons</p>
+        <div class="example-label">Basic</div>
         <div class="example-button-row">
           <tiaa-button variant="basic">Basic</tiaa-button>
           <tiaa-button variant="basic" color="primary">Primary</tiaa-button>
@@ -60,26 +59,218 @@
           <a mat-button href="https://www.google.com/" target="_blank">Link</a>
         </div>
       </section>
+      <mat-divider></mat-divider>
       <section>
-        <p class="example-label">Raised Buttons</p>
+        <div class="example-label">Raised</div>
         <div class="example-button-row">
+          <tiaa-button variant="raised">Basic</tiaa-button>
           <tiaa-button variant="raised" color="primary">Primary</tiaa-button>
           <tiaa-button variant="raised" color="accent">Accent</tiaa-button>
           <tiaa-button variant="raised" color="warn">Warn</tiaa-button>
           <tiaa-button variant="raised" disabled>Disabled</tiaa-button>
-          <a mat-raised-button href="https://www.google.com/" target="_blank"
+          <a variant="raised" href="https://www.google.com/" target="_blank"
             >Link</a
           >
         </div>
-        <br />
-        <tiaa-divider></tiaa-divider>
-        <br />
-        <tiaa-stepper>
-          <tiaa-step label="Step 1"></tiaa-step>
-          <tiaa-step label="Step 2"></tiaa-step>
-          <tiaa-step label="Step 3"></tiaa-step>
-        </tiaa-stepper>
       </section>
+      <mat-divider></mat-divider>
+      <section>
+        <div class="example-label">Stroked</div>
+        <div class="example-button-row">
+          <tiaa-button variant="stroke">Basic</tiaa-button>
+          <tiaa-button variant="stroke" color="primary">Primary</tiaa-button>
+          <tiaa-button variant="stroke" color="accent">Accent</tiaa-button>
+          <tiaa-button variant="stroke" color="warn">Warn</tiaa-button>
+          <tiaa-button variant="stroke" disabled>Disabled</tiaa-button>
+          <a variant="stroke" href="https://www.google.com/" target="_blank"
+            >Link</a
+          >
+        </div>
+      </section>
+      DIVIDER
+      <mat-divider></mat-divider>
+      <section>
+        <div class="example-label">Flat</div>
+        <div class="example-button-row">
+          <tiaa-button variant="flat">Basic</tiaa-button>
+          <tiaa-button variant="flat" color="primary">Primary</tiaa-button>
+          <tiaa-button variant="flat" color="accent">Accent</tiaa-button>
+          <tiaa-button variant="flat" color="warn">Warn</tiaa-button>
+          <tiaa-button variant="flat" disabled>Disabled</tiaa-button>
+          <a variant="flat" href="https://www.google.com/" target="_blank"
+            >Link</a
+          >
+        </div>
+      </section>
+      <mat-divider></mat-divider>
+      <section>
+        <div class="example-label">Icon</div>
+        <div class="example-button-row">
+          <div class="example-flex-container">
+            <tiaa-button
+              [isIconButton]="true"
+              variant="icon"
+              aria-label="Example icon button with a vertical three dot icon"
+              icon="more_vert"
+            >
+              <mat-icon>more_vert</mat-icon>
+            </tiaa-button>
+            <tiaa-button
+              [isIconButton]="true"
+              variant="icon"
+              color="primary"
+              aria-label="Example icon button with a home icon"
+              icon="home"
+            >
+              <mat-icon>home</mat-icon>
+            </tiaa-button>
+            <tiaa-button
+              [isIconButton]="true"
+              variant="icon"
+              color="accent"
+              aria-label="Example icon button with a menu icon"
+              icon="menu"
+            >
+              <mat-icon>menu</mat-icon>
+            </tiaa-button>
+            <tiaa-button
+              [isIconButton]="true"
+              variant="icon"
+              color="warn"
+              icon="favorite"
+              aria-label="Example icon button with a heart icon"
+            >
+              <mat-icon>favorite</mat-icon>
+            </tiaa-button>
+            <tiaa-button
+              variant="icon"
+              [isIconButton]="true"
+              icon="open_in_new"
+              disabled
+              aria-label="Example icon button with a open in new tab icon"
+              icon="open_in_new"
+            >
+              <mat-icon>open_in_new</mat-icon>
+            </tiaa-button>
+          </div>
+        </div>
+      </section>
+      <mat-divider></mat-divider>
+      <section>
+        <div class="example-label">FAB</div>
+        <div class="example-button-row">
+          <div class="example-flex-container">
+            <div class="example-button-container">
+              <tiaa-button
+                [isIconButton]="true"
+                variant="fab"
+                color="primary"
+                aria-label="Example icon button with a delete icon"
+                icon="delete"
+              >
+                <mat-icon>delete</mat-icon>
+              </tiaa-button>
+            </div>
+            <div class="example-button-container">
+              <tiaa-button
+                [isIconButton]="true"
+                variant="fab"
+                color="accent"
+                aria-label="Example icon button with a bookmark icon"
+                icon="bookmark"
+              >
+                <mat-icon>bookmark</mat-icon>
+              </tiaa-button>
+            </div>
+            <div class="example-button-container">
+              <tiaa-button
+                variant="fab"
+                [isIconButton]="true"
+                color="warn"
+                aria-label="Example icon button with a home icon"
+                icon="home"
+              >
+                <mat-icon>home</mat-icon>
+              </tiaa-button>
+            </div>
+            <div class="example-button-container">
+              <tiaa-button
+                variant="fab"
+                disabled
+                aria-label="Example icon button with a heart icon"
+                [isIconButton]="true"
+                icon="favorite"
+              >
+                <mat-icon>favorite</mat-icon>
+              </tiaa-button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <mat-divider></mat-divider>
+      <section>
+        <div class="example-label">Mini FAB</div>
+        <div class="example-button-row">
+          <div class="example-flex-container">
+            <div class="example-button-container">
+              <tiaa-button
+                variant="mini-fab"
+                color="primary"
+                [isIconButton]="true"
+                aria-label="Example icon button with a menu icon"
+                icon="menu"
+              >
+                <mat-icon>menu</mat-icon>
+              </tiaa-button>
+            </div>
+            <div class="example-button-container">
+              <tiaa-button
+                variant="mini-fab"
+                color="accent"
+                [isIconButton]="true"
+                aria-label="Example icon button with a plus one icon"
+                icon="plus_one"
+              >
+                <mat-icon>plus_one</mat-icon>
+              </tiaa-button>
+            </div>
+            <div class="example-button-container">
+              <tiaa-button
+                [isIconButton]="true"
+                variant="mini-fab"
+                color="warn"
+                aria-label="Example icon button with a filter list icon"
+                icon="filter_list"
+              >
+                <mat-icon>filter_list</mat-icon>
+              </tiaa-button>
+            </div>
+            <div class="example-button-container">
+              <tiaa-button
+                [isIconButton]="true"
+                variant="mini-fab"
+                disabled
+                aria-label="Example icon button with a home icon"
+                icon="home"
+              >
+                <mat-icon>home</mat-icon>
+              </tiaa-button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      Divider
+      <tiaa-divider></tiaa-divider>
+
+      Card
+      <tiaa-card></tiaa-card>
+      <br />
+      <tiaa-stepper>
+        <tiaa-step label="Step 1"></tiaa-step>
+        <tiaa-step label="Step 2"></tiaa-step>
+        <tiaa-step label="Step 3"></tiaa-step>
+      </tiaa-stepper>
     </section>
   </div>
   <div class="dark-theme">
@@ -102,7 +293,7 @@
         <h6>h6 header</h6>
       </div>
       <section>
-        <p class="example-label">Basic Buttons</p>
+        <div class="example-label">Basic</div>
         <div class="example-button-row">
           <tiaa-button variant="basic">Basic</tiaa-button>
           <tiaa-button variant="basic" color="primary">Primary</tiaa-button>
@@ -112,19 +303,214 @@
           <a mat-button href="https://www.google.com/" target="_blank">Link</a>
         </div>
       </section>
+      <mat-divider></mat-divider>
       <section>
-        <p class="example-label">Raised Buttons</p>
+        <div class="example-label">Raised</div>
         <div class="example-button-row">
+          <tiaa-button variant="raised">Basic</tiaa-button>
           <tiaa-button variant="raised" color="primary">Primary</tiaa-button>
           <tiaa-button variant="raised" color="accent">Accent</tiaa-button>
           <tiaa-button variant="raised" color="warn">Warn</tiaa-button>
           <tiaa-button variant="raised" disabled>Disabled</tiaa-button>
-          <a mat-raised-button href="https://www.google.com/" target="_blank"
+          <a variant="raised" href="https://www.google.com/" target="_blank"
             >Link</a
           >
         </div>
+      </section>
+      <mat-divider></mat-divider>
+      <section>
+        <div class="example-label">Stroked</div>
+        <div class="example-button-row">
+          <tiaa-button variant="stroke">Basic</tiaa-button>
+          <tiaa-button variant="stroke" color="primary">Primary</tiaa-button>
+          <tiaa-button variant="stroke" color="accent">Accent</tiaa-button>
+          <tiaa-button variant="stroke" color="warn">Warn</tiaa-button>
+          <tiaa-button variant="stroke" disabled>Disabled</tiaa-button>
+          <a variant="stroke" href="https://www.google.com/" target="_blank"
+            >Link</a
+          >
+        </div>
+      </section>
+      DIVIDER
+      <mat-divider></mat-divider>
+      <section>
+        <div class="example-label">Flat</div>
+        <div class="example-button-row">
+          <tiaa-button variant="flat">Basic</tiaa-button>
+          <tiaa-button variant="flat" color="primary">Primary</tiaa-button>
+          <tiaa-button variant="flat" color="accent">Accent</tiaa-button>
+          <tiaa-button variant="flat" color="warn">Warn</tiaa-button>
+          <tiaa-button variant="flat" disabled>Disabled</tiaa-button>
+          <a variant="flat" href="https://www.google.com/" target="_blank"
+            >Link</a
+          >
+        </div>
+      </section>
+      <mat-divider></mat-divider>
+      <section>
+        <div class="example-label">Icon</div>
+        <div class="example-button-row">
+          <div class="example-flex-container">
+            <tiaa-button
+              [isIconButton]="true"
+              variant="icon"
+              aria-label="Example icon button with a vertical three dot icon"
+              icon="more_vert"
+            >
+              <mat-icon>more_vert</mat-icon>
+            </tiaa-button>
+            <tiaa-button
+              [isIconButton]="true"
+              variant="icon"
+              color="primary"
+              aria-label="Example icon button with a home icon"
+              icon="home"
+            >
+              <mat-icon>home</mat-icon>
+            </tiaa-button>
+            <tiaa-button
+              [isIconButton]="true"
+              variant="icon"
+              color="accent"
+              aria-label="Example icon button with a menu icon"
+              icon="menu"
+            >
+              <mat-icon>menu</mat-icon>
+            </tiaa-button>
+            <tiaa-button
+              [isIconButton]="true"
+              variant="icon"
+              color="warn"
+              icon="favorite"
+              aria-label="Example icon button with a heart icon"
+            >
+              <mat-icon>favorite</mat-icon>
+            </tiaa-button>
+            <tiaa-button
+              variant="icon"
+              [isIconButton]="true"
+              icon="open_in_new"
+              disabled
+              aria-label="Example icon button with a open in new tab icon"
+              icon="open_in_new"
+            >
+              <mat-icon>open_in_new</mat-icon>
+            </tiaa-button>
+          </div>
+        </div>
+      </section>
+      <mat-divider></mat-divider>
+      <section>
+        <div class="example-label">FAB</div>
+        <div class="example-button-row">
+          <div class="example-flex-container">
+            <div class="example-button-container">
+              <tiaa-button
+                [isIconButton]="true"
+                variant="fab"
+                color="primary"
+                aria-label="Example icon button with a delete icon"
+                icon="delete"
+              >
+                <mat-icon>delete</mat-icon>
+              </tiaa-button>
+            </div>
+            <div class="example-button-container">
+              <tiaa-button
+                [isIconButton]="true"
+                variant="fab"
+                color="accent"
+                aria-label="Example icon button with a bookmark icon"
+                icon="bookmark"
+              >
+                <mat-icon>bookmark</mat-icon>
+              </tiaa-button>
+            </div>
+            <div class="example-button-container">
+              <tiaa-button
+                variant="fab"
+                [isIconButton]="true"
+                color="warn"
+                aria-label="Example icon button with a home icon"
+                icon="home"
+              >
+                <mat-icon>home</mat-icon>
+              </tiaa-button>
+            </div>
+            <div class="example-button-container">
+              <tiaa-button
+                variant="fab"
+                disabled
+                aria-label="Example icon button with a heart icon"
+                [isIconButton]="true"
+                icon="favorite"
+              >
+                <mat-icon>favorite</mat-icon>
+              </tiaa-button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <mat-divider></mat-divider>
+      <section>
+        <div class="example-label">Mini FAB</div>
+        <div class="example-button-row">
+          <div class="example-flex-container">
+            <div class="example-button-container">
+              <tiaa-button
+                variant="mini-fab"
+                color="primary"
+                [isIconButton]="true"
+                aria-label="Example icon button with a menu icon"
+                icon="menu"
+              >
+                <mat-icon>menu</mat-icon>
+              </tiaa-button>
+            </div>
+            <div class="example-button-container">
+              <tiaa-button
+                variant="mini-fab"
+                color="accent"
+                [isIconButton]="true"
+                aria-label="Example icon button with a plus one icon"
+                icon="plus_one"
+              >
+                <mat-icon>plus_one</mat-icon>
+              </tiaa-button>
+            </div>
+            <div class="example-button-container">
+              <tiaa-button
+                [isIconButton]="true"
+                variant="mini-fab"
+                color="warn"
+                aria-label="Example icon button with a filter list icon"
+                icon="filter_list"
+              >
+                <mat-icon>filter_list</mat-icon>
+              </tiaa-button>
+            </div>
+            <div class="example-button-container">
+              <tiaa-button
+                [isIconButton]="true"
+                variant="mini-fab"
+                disabled
+                aria-label="Example icon button with a home icon"
+                icon="home"
+              >
+                <mat-icon>home</mat-icon>
+              </tiaa-button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
         <br />
-        <tiaa-divider></tiaa-divider>
+        <tiaa-card
+          title="This is the Card Title"
+          subtitle="This is the Card Subtitle"
+          content="The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting."
+        >
+        </tiaa-card>
         <br />
         <tiaa-stepper>
           <tiaa-step label="Step 1"></tiaa-step>

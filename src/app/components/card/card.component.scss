@@ -1,0 +1,8 @@
+@use '@angular/material'as mat;
+@use '~/src/scss/custom-theme'as custom;
+
+@include mat.card-theme(custom.$theme);
+
+.dark-theme {
+  @include mat.card-theme(custom.$altTheme);
+}

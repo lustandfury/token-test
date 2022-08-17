@@ -7,6 +7,7 @@ import { ButtonComponent } from './components/button/button.component';
 import { DividerComponent } from './components/divider/divider.component';
 import { StepperComponent } from './components/stepper/stepper.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CardComponent } from './components/card/card.component';
 
 @NgModule({
   declarations: [AppComponent],
@@ -16,6 +17,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ButtonComponent,
     DividerComponent,
     StepperComponent,
+    CardComponent,
     BrowserAnimationsModule,
   ],
   providers: [],
