@@ -56,9 +56,29 @@
 </button>
 
 <button
-  *ngIf="isIconButton"
+  *ngIf="isIconButton === true"
   ngClass="{{ classes }}"
   mat-icon-button
+  color="{{ color }}"
+  [disabled]="isDisabled"
+>
+  <mat-icon>{{ icon }}</mat-icon>
+</button>
+
+<button
+  *ngIf="isIconButton === true && variant === 'fab'"
+  ngClass="{{ classes }}"
+  mat-fab
+  color="{{ color }}"
+  [disabled]="isDisabled"
+>
+  <mat-icon>{{ icon }}</mat-icon>
+</button>
+
+<button
+  *ngIf="isIconButton === true && variant === 'mini-fab'"
+  ngClass="{{ classes }}"
+  mat-mini-fab
   color="{{ color }}"
   [disabled]="isDisabled"
 >

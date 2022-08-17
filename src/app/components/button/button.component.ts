@@ -33,7 +33,15 @@ export class ButtonComponent {
   @Input() isDisabled: boolean = false;
   @Input() color: ThemePalette;
   @Input() icon: string = '';
-  @Input() variant: 'basic' | 'flat' | 'stroke' | 'text' | 'raised' = 'basic';
+  @Input() variant:
+    | 'basic'
+    | 'flat'
+    | 'stroke'
+    | 'text'
+    | 'raised'
+    | 'icon'
+    | 'fab'
+    | 'mini-fab' = 'basic';
 
   @Output() onClick = new EventEmitter<Event>();
 
