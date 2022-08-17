@@ -11,6 +11,8 @@
 @include mat.all-component-colors(custom.$theme);
 
 .dark-theme {
+  @include mat.core(custom.$altTheme);
+
   @include mat.all-component-colors(custom.$altTheme);
 }
 
