@@ -8,6 +8,7 @@ import { DividerComponent } from './components/divider/divider.component';
 import { StepperComponent } from './components/stepper/stepper.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CardComponent } from './components/card/card.component';
+import { ToolbarComponent } from './components/toolbar/toolbar.component';
 
 @NgModule({
   declarations: [AppComponent],
@@ -18,6 +19,7 @@ import { CardComponent } from './components/card/card.component';
     DividerComponent,
     StepperComponent,
     CardComponent,
+    ToolbarComponent,
     BrowserAnimationsModule,
   ],
   providers: [],

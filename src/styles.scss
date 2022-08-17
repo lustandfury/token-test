@@ -2,7 +2,7 @@
 @use '@angular/material'as mat;
 @use'src/scss/typography'as typography;
 @use 'src/scss/custom-theme'as custom;
-
+@use 'src/components/button/button.component.scss';
 
 @include mat.core(typography.$tiaa-typography);
 
@@ -11,8 +11,7 @@
 @include mat.all-component-colors(custom.$theme);
 
 .dark-theme {
-  @include mat.core(custom.$altTheme);
-
+  @include mat.core-theme(custom.$altTheme);
   @include mat.all-component-colors(custom.$altTheme);
 }
 
